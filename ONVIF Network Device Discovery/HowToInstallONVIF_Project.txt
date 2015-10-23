@@ -1,0 +1,9 @@
+1)Extract Zip folder
+2)Install "jdk-6u16-windows-i586"
+3)Install "netbeans-7.1-ml-javaee-windows"...give path of jdk-6u16 while installing 
+4)Install "mysql-5_2.1.40-win32.msi"....username:-root... password:-pass
+5)Copy Jmyron library
+   if(32 bit)----c->windows->system32
+   if(64 bit)----c->windows->SysWOW64
+6)open MYSQL cmd and copy lines from queries.txt
+7)open Netbeans ....open all 3 project....run cloud first...then application and then client
