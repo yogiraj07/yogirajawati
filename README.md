@@ -1,2 +1,2 @@
 # yogirajawati
-Codes by Yogiraj
+Codes by Yogiraj Awati
