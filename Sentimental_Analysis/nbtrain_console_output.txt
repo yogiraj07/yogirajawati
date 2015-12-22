@@ -1,0 +1,48 @@
+For Input:
+nbtrain "C:\Users\Ashish\Documents\IR\Assignment 6\AshishTextClassification\textcat\train" "model.txt"
+
+Console Output:
+C:\Users\Ashish\Documents\IR\Assignment 6\AshishTextClassification\textcat\train\pos
+C:\Users\Ashish\Documents\IR\Assignment 6\AshishTextClassification\textcat\train\neg
+Top 20 terms with the highest (log) ratio of positive to negative weight:
+shrek
+mulan
+gattaca
+flynt
+guido
+ordell
+leila
+sweetback
+taran
+homer
+mallory
+donkey
+rounders
+argento
+truman's
+lebowski
+giles
+fei-hong
+farquaad
+carver
+Top 20 terms with the highest (log) ratio of negative to positive weight.
+&nbsp
+jolie
+seagal
+brenner
+1900
+pokemon
+8mm
+bruckheimer
+silverman
+tango
+supergirl
+babysitter
+psychlos
+atrocious
+memphis
+psychlo
+tomb
+bilko
+raider
+farrellys

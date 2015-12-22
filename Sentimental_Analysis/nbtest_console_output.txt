@@ -1,0 +1,15 @@
+For input:
+"model.txt" "C:\Users\Ashish\Documents\IR\Assignment 6\YogirajAshishTextClassification\textcat\test" "TestPrediction.txt"
+
+Console Output:
+Positive Review : 90 Negative Review : 110 Total Files : 200
+
+
+For input:
+"model.txt" "C:\Users\Ashish\Documents\IR\Assignment 6\YogirajAshishTextClassification\textcat\dev" "DevPrediction.txt"
+
+Console Output:
+In folder : neg
+Positive Review : 20 Negative Review : 80 Total Files : 100
+In folder : pos
+Positive Review : 75 Negative Review : 25 Total Files : 100
