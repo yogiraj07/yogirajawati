@@ -1,0 +1,4 @@
+INDEX VERSION 1.127+D:\Yogiraj-Github\yogirajawati\MapReduceProgramming\.metadata\.plugins\org.eclipse.jdt.core
+4257325822.index
+211938163.index
+332383186.index
