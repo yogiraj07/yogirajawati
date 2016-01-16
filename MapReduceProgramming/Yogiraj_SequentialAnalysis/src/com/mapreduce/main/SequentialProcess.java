@@ -1,7 +1,4 @@
 package com.mapreduce.main;
-
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -16,18 +13,13 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.TreeMap;
 import java.util.zip.GZIPInputStream;
-
 import com.opencsv.CSVReader;
-
-
 public class SequentialProcess {
 
 	private static ArrayList<String> fileColoumns = new ArrayList<String>();
-	private static String DELIMITER = ",";
 	private static HashMap<String,Double> carrierTicketPrice=new HashMap<String,Double>();
 	private static HashMap<String, Integer> carrierFrequency=new HashMap<String, Integer>();
-	private static TreeMap<String, Float> result = new TreeMap<String, Float>();
-	
+
 	public static void analyzeFile(String filename)
 	{
 		long corruptLines=1;
@@ -73,11 +65,25 @@ public class SequentialProcess {
 	    	 
 	    	 key = i.next();
 	    	 Double temp =(double)carrierTicketPrice.get(key)/carrierFrequency.get(key);
+	    	 
 	    	 carrierTicketPrice.put(key, temp);
 	     }
 	     
+	     //outputMap stores sorted mean average price for each carrier
+	     TreeMap<String, Double> outputMap = sortValues(carrierTicketPrice);
+	     for (String carrier:outputMap.keySet()) {
+			System.out.println("Carrier: "+carrier+" Mean Average Price: "+carrierTicketPrice.get(carrier));
+		} 
 	}
 	
+	private static TreeMap<String, Double> sortValues(HashMap<String, Double> carrierTicketPrice) {
+		// TODO Auto-generated method stub
+		SortValues sc = new SortValues(carrierTicketPrice);
+		TreeMap<String, Double> map= new TreeMap<>(sc);
+		map.putAll(carrierTicketPrice);
+		return map;
+	}
+
 	//sanity test
 	private static boolean checkValidLine(String[] dataPerLine) {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("HHmm");
@@ -190,9 +196,7 @@ public class SequentialProcess {
 				  return false;
 			}
 		}
-		
-		
-		//////////////////////////////////////////////////
+				
 		//Populating Hashmaps
 		String carrierName= dataPerLine[fileColoumns.indexOf("CARRIER")];
 		Double ticketPrice= Double.parseDouble(dataPerLine[fileColoumns.indexOf("AVG_TICKET_PRICE")]);
