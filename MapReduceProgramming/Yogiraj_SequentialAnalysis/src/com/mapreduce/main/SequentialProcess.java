@@ -10,25 +10,32 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.TreeMap;
 import java.util.zip.GZIPInputStream;
 
 import com.opencsv.CSVReader;
 
+
 public class SequentialProcess {
 
-	private ArrayList<String> fileColoumns = new ArrayList<String>();
-	private String DELIMITER = ",";
-//	private HashMap<String, Float> ticketPriceMap = new HashMap<String, Float>();
-	public void analyzeFile(String filename)
+	private static ArrayList<String> fileColoumns = new ArrayList<String>();
+	private static String DELIMITER = ",";
+	private static HashMap<String,Double> carrierTicketPrice=new HashMap<String,Double>();
+	private static HashMap<String, Integer> carrierFrequency=new HashMap<String, Integer>();
+	private static TreeMap<String, Float> result = new TreeMap<String, Float>();
+	
+	public static void analyzeFile(String filename)
 	{
 		long corruptLines=1;
 		long validLines=0;
 		try {
 			//point to file
 			GZIPInputStream inputFile = new GZIPInputStream(
-					new FileInputStream("C:\\Users\\Yogiraj\\Downloads\\323.csv.gz"));
+					new FileInputStream(filename));
 
 			Reader r = new InputStreamReader(inputFile, "ASCII");
 			//using CSV parser
@@ -58,12 +65,23 @@ public class SequentialProcess {
 		//Final Output
 		 System.out.println("F = " + validLines);
 	     System.out.println("K = " + corruptLines);
+	     
+	     Iterator<String> i =carrierTicketPrice.keySet().iterator();
+	     String key;
+	     while(i.hasNext())
+	     {
+	    	 
+	    	 key = i.next();
+	    	 Double temp =(double)carrierTicketPrice.get(key)/carrierFrequency.get(key);
+	    	 carrierTicketPrice.put(key, temp);
+	     }
+	     
 	}
 	
 	//sanity test
-	private boolean checkValidLine(String[] dataPerLine) {
+	private static boolean checkValidLine(String[] dataPerLine) {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("HHmm");
-		//extract fields for processing
+		//extract dataPerLine for processing
 		String CRS_ARR_TIME = dataPerLine[fileColoumns.indexOf("CRS_ARR_TIME")];
 		String CRS_ELAPSED_TIME = dataPerLine[fileColoumns.indexOf("CRS_ELAPSED_TIME")];
 		String CRS_DEP_TIME = dataPerLine[fileColoumns.indexOf("CRS_DEP_TIME")];
@@ -81,32 +99,160 @@ public class SequentialProcess {
 			if((timeZone % 60) !=0) return false;
 			
 		} 
-		catch ()
+		catch (NumberFormatException e)
 		{
-			
+			return false;
 		}
 		catch (ParseException e) {
 			return false;
 		}
 		
-		return false;
-	}
-	
-	
-	private float calculateDateDiff(String crsArrTime, String crsDepTime) {
+		//AirportID,  AirportSeqID, CityMarketID, StateFips, Wac should be larger than 0
+		//So extract these field and check validation
 		
-		if (Integer.parseInt(crsArrTime) > Integer.parseInt(crsDepTime)){
-			return (Integer.parseInt(crsArrTime.substring(0, 2)) - Integer.parseInt(crsDepTime.substring(0, 2))) * 60 +
-					(Integer.parseInt(crsArrTime.substring(2, 4)) - Integer.parseInt(crsDepTime.substring(2, 4)));
+		int originAirportId = Integer.parseInt(dataPerLine[fileColoumns.indexOf("ORIGIN_AIRPORT_ID")]);
+		if (originAirportId <= 0) return false;
+		
+		int originAirportSeqId = Integer.parseInt(dataPerLine[fileColoumns.indexOf("ORIGIN_AIRPORT_SEQ_ID")]);
+		if (originAirportSeqId <= 0) return false;
+		
+		int originCirtMarketId = Integer.parseInt(dataPerLine[fileColoumns.indexOf("ORIGIN_CITY_MARKET_ID")]);
+		if (originCirtMarketId <= 0) return false;
+		
+		int originStateFips = Integer.parseInt(dataPerLine[fileColoumns.indexOf("ORIGIN_STATE_FIPS")]);
+		if (originStateFips <= 0) return false;
+		
+		int originWac = Integer.parseInt(dataPerLine[fileColoumns.indexOf("ORIGIN_WAC")]);
+		if (originWac <= 0) return false;
+		
+		int destAirpotId = Integer.parseInt(dataPerLine[fileColoumns.indexOf("DEST_AIRPORT_ID")]);
+		if (destAirpotId <= 0) return false;
+		
+		int destAirportSeqId = Integer.parseInt(dataPerLine[fileColoumns.indexOf("DEST_AIRPORT_SEQ_ID")]);
+		if (destAirportSeqId <= 0) return false;
+		
+		int destCityMarketId = Integer.parseInt(dataPerLine[fileColoumns.indexOf("DEST_CITY_MARKET_ID")]);
+		if (destCityMarketId <= 0) return false;
+		
+		int destStateFips = Integer.parseInt(dataPerLine[fileColoumns.indexOf("DEST_STATE_FIPS")]);
+		if (destStateFips <= 0) return false;
+		
+		int destWac = Integer.parseInt(dataPerLine[fileColoumns.indexOf("DEST_WAC")]);
+		if (destWac <= 0) return false;
+		
+		//Origin, Destination,  CityName, State, StateName should not be empty
+	
+		String origin = dataPerLine[fileColoumns.indexOf("ORIGIN")];
+		String originCityName = dataPerLine[fileColoumns.indexOf("ORIGIN_CITY_NAME")];
+		String originState = dataPerLine[fileColoumns.indexOf("ORIGIN_STATE_ABR")];
+		String originStateNm = dataPerLine[fileColoumns.indexOf("ORIGIN_STATE_NM")];
+		String dest = dataPerLine[fileColoumns.indexOf("DEST")];		
+		String destCityName = dataPerLine[fileColoumns.indexOf("DEST_CITY_NAME")];
+		String destStateAbr = dataPerLine[fileColoumns.indexOf("DEST_STATE_ABR")];
+		String destStateNm = dataPerLine[fileColoumns.indexOf("DEST_STATE_NM")];
+		if (origin.equals("") || originCityName.equals("") || originState.equals("") || originStateNm.equals("")
+				|| dest.equals("") || destCityName.equals("") || destStateAbr.equals("") || destStateNm.equals(""))
+			return false;
+		
+		//for Flights that are not cancelled
+		int cancelled = Integer.parseInt(dataPerLine[fileColoumns.indexOf("CANCELLED")]);
+	    
+		if(cancelled==0)
+		{
+			
+			//ArrTime -  DepTime - ActualElapsedTime - timeZone should be zero
+			String actualElaspedTime = dataPerLine[fileColoumns.indexOf("ACTUAL_ELAPSED_TIME")];
+			String arrTime = dataPerLine[fileColoumns.indexOf("ARR_TIME")];
+			String deptTime = dataPerLine[fileColoumns.indexOf("DEP_TIME")];
+		    float temp = calculateDateDiff(arrTime, deptTime)-Float.parseFloat(actualElaspedTime)-timeZone;
+		    if(temp!=0)
+		    	return false;
+				
+			//if ArrDelay > 0 then ArrDelay should equal to ArrDelayMinutes
+			//if ArrDelay < 0 then ArrDelayMinutes should be zero
+			//if ArrDelayMinutes >= 15 then ArrDel15 should be false
+			float arrDelay = Float.parseFloat(dataPerLine[fileColoumns.indexOf("ARR_DELAY")]);
+			float arrDelayMin = Float.parseFloat(dataPerLine[fileColoumns.indexOf("ARR_DELAY_NEW")]);
+			float delayOf15 = Float.parseFloat(dataPerLine[fileColoumns.indexOf("ARR_DEL15")]);
+			if(arrDelay>0.0)
+			{
+				if(!(arrDelayMin==arrDelay))
+				      return false;
+			}
+			if(arrDelay<0.0)
+			{
+				if(arrDelayMin!=0.0)
+				   return false;
+			}
+			if(arrDelayMin>=15.0)
+			{
+				if(delayOf15!=1)
+				  return false;
+			}
+		}
+		
+		
+		//////////////////////////////////////////////////
+		//Populating Hashmaps
+		String carrierName= dataPerLine[fileColoumns.indexOf("CARRIER")];
+		Double ticketPrice= Double.parseDouble(dataPerLine[fileColoumns.indexOf("AVG_TICKET_PRICE")]);
+		populatePriceFrequency(carrierName,ticketPrice);
+		
+		//Sanity test is passed
+		return true;
+	}
+
+	private static void populatePriceFrequency(String carrierName, Double ticketPrice) {
+		if (carrierTicketPrice.containsKey(carrierName)) {
+			// increase the frequency
+			carrierFrequency.put(carrierName, carrierFrequency.get(carrierName) + 1);
+			// add ticket price to that carrier name
+			carrierTicketPrice.put(carrierName, carrierTicketPrice.get(carrierName) + ticketPrice);
 		} else {
-			return (Integer.parseInt(crsArrTime.substring(0, 2)) - Integer.parseInt(crsDepTime.substring(0, 2)) + 24) * 60 +
-					(Integer.parseInt(crsArrTime.substring(2, 4)) - Integer.parseInt(crsDepTime.substring(2, 4)));
+			// populating for the first time
+			carrierFrequency.put(carrierName, 1);
+			carrierTicketPrice.put(carrierName, ticketPrice);
+		}
+
+	}
+
+	private static float calculateDateDiff(String crsArrTime, String crsDepTime) {
+
+		int hoursDiff; //hours diff
+		int minDiff;   // minutes diff
+		if (Integer.parseInt(crsArrTime) > Integer.parseInt(crsDepTime)) {
+			 hoursDiff = (Integer.parseInt(crsArrTime.substring(0, 2)) - Integer.parseInt(crsDepTime.substring(0, 2))) * 60;
+			 minDiff=(Integer.parseInt(crsArrTime.substring(2, 4)) - Integer.parseInt(crsDepTime.substring(2, 4)));
+			return  hoursDiff + minDiff;
+		} else {
+			hoursDiff = (Integer.parseInt(crsArrTime.substring(0, 2)) - Integer.parseInt(crsDepTime.substring(0, 2)) + 24)
+					* 60;
+			minDiff = (Integer.parseInt(crsArrTime.substring(2, 4)) - Integer.parseInt(crsDepTime.substring(2, 4)));
+			return hoursDiff + minDiff ;
 		}
 	}
 
 	public static void main(String[] args) {
-		
+		analyzeFile("C:\\Users\\Yogiraj\\Downloads\\323.csv.gz");
 
 	}
-
+   
 }
+class SortValues implements Comparator<String>
+	{
+	 HashMap<String,Double> h;
+	public  SortValues(HashMap<String,Double> h) {
+		// TODO Auto-generated constructor stub
+		this.h=h;
+	}
+
+		@Override
+		public int compare(String arg1, String arg2) {
+			// TODO Auto-generated method stub
+			if(h.get(arg1)>h.get(arg2))
+				return 1;
+			return -1;
+		}
+		
+	}
+
