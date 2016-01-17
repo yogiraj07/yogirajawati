@@ -1,0 +1,123 @@
+package com.algortihms.linklist;
+
+public class LinkedList {
+	
+    private Node header;
+    private int listSize;
+    public LinkedList() {
+		header=new Node(0);
+		listSize=0;
+	}
+    //to add new node at the end of the list
+    public void addNode(int data)
+    {
+    	Node currentNode = header;
+    	Node tempNode=new Node(data);
+    	//travel till end of list
+    	
+    	while(currentNode.getNext()!=null)
+    	{
+    		System.out.println("hi");
+    		currentNode=currentNode.getNext();
+    	}
+    	
+    	//insert new node at the last of the list
+    	currentNode.setNext(tempNode);
+    	
+    	//keep track of list size
+    	listSize++;
+    }
+    
+    //to intersect two list
+    public void intersectNode(Node n)
+    {
+    	Node currentNode = header;
+    	while(currentNode.getNext()!=null)
+    	{
+    		currentNode=currentNode.getNext();
+    	}
+    	currentNode.setNext(n);
+    	
+    }
+    //return size of the list
+    public int getSize()
+    {
+    	return this.listSize;
+    }
+    //return Node of the desired Value
+  	private  Node getNode(int i) {
+  		Node currentNode = header;
+      	while(currentNode.getData()!=i)
+      	{
+      		currentNode=currentNode.getNext();
+      	}
+  		return  currentNode.getNext()==null?null:currentNode;
+  	}
+  	@Override
+  	public String toString() {
+  		StringBuilder display=new StringBuilder();
+  		display.append("[");
+  		Node current=header.getNext();
+  		while (current.getNext()!=null)
+  		{
+  			display.append(" "+current.getData());
+  			current=current.getNext();
+  		}
+  		display.append(" "+current.getData()+" ]");
+  		
+  		return display.toString();
+  	}
+  	
+	public static void main(String[] args) {
+       LinkedList A = new LinkedList();
+       A.addNode(11);
+       A.addNode(12);
+       A.addNode(13);
+       A.addNode(14);
+       A.addNode(15);
+       Node intersectingNode = A.getNode(12);
+       LinkedList B = new LinkedList();
+       B.addNode(30);
+       B.addNode(40);
+       B.addNode(50);
+       B.addNode(60);
+       B.addNode(70);
+       List B intersect with list A
+       if(intersectingNode != null)
+       {
+    	   B.intersectNode(intersectingNode);
+       }
+      System.out.println(A.header.getNext().getData());
+      System.out.println("List A : "+A);
+      //System.out.println("List B : "+B);
+       
+	}
+	
+	
+
+}
+
+class Node{
+	private int data;
+	private Node next;
+	
+	
+	public Node(int data) {
+		super();
+		this.data = data;
+		this.next = null;
+	}
+	public int getData() {
+		return this.data;
+	}
+	public void setData(int data) {
+		this.data = data;
+	}
+	public Node getNext() {
+		return this.next;
+	}
+	public void setNext(Node next) {
+		this.next = next;
+	}
+	
+}
