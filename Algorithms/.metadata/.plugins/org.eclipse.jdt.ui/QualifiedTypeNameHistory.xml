@@ -2,4 +2,18 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.algortihms.linklist.Node"/>
 <fullyQualifiedTypeName name="com.algortihms.linklist.LinkedList"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="javax.xml.crypto.dsig.keyinfo.KeyValue"/>
+<fullyQualifiedTypeName name="com.algorithm.customhash.Solution"/>
+<fullyQualifiedTypeName name="com.algorithm.customhash.KeyValue"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="BinomialHeap.BinomialNode"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="com.algorithms.redblacktree.RBNode"/>
 </qualifiedTypeNameHistroy>

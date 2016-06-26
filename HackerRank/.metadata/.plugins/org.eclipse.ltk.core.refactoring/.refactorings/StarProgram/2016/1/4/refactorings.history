@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;Solution.addSpaces(...)&apos; to &apos;addData&apos;&#x0D;&#x0A;- Original project: &apos;StarProgram&apos;&#x0D;&#x0A;- Original element: &apos;Solution.addSpaces(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;Solution.addData(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;addSpaces&apos;" flags="589826" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{Solution.java[Solution~addSpaces~I~QStringBuilder;~QString;" name="addData" references="true" stamp="1453100550319" version="1.0"/>
+</session>

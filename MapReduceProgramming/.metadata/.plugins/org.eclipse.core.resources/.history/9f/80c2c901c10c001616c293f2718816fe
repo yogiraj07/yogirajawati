@@ -1,0 +1,9 @@
+package custom.mr.utils;
+public class FileInputFormat {
+
+	public static void addInputPath(Job job, Path path) 
+	{
+		job.inputPath = path.getPath();
+	}
+
+}

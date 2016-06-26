@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;predictedVal&apos; in &apos;ConfusionMatrix.main(...)&apos; to &apos;predictionValue&apos;&#x0D;&#x0A;- Original project: &apos;ConfusionMatrix&apos;&#x0D;&#x0A;- Original element: &apos;ConfusionMatrix.main(String[]).predictedVal&apos;&#x0D;&#x0A;- Renamed element: &apos;predictedVal&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;predictedVal&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{ConfusionMatrix.java[ConfusionMatrix~main~\[QString;@predictedVal!1406!1449!1413!1424!QString;!0!false" name="predictionValue" references="true" stamp="1458339023342" version="1.0"/>
+</session>

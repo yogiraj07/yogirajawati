@@ -1,0 +1,40 @@
+
+public class Solution {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          prettyPrint(4);
+	}
+
+	private static void prettyPrint(int i) {
+		// TODO Auto-generated method stub
+		int[][]output=new int[2*i][2*i];
+		output=populateMatrix(i,0,2*i-1,output);
+		for(int k=0;k<=i;k++)
+		{
+			for(int l =0;l<=i;l++)
+				System.out.print(output[k][l]+" ");
+ 		    System.out.println();
+		}
+	}
+
+	private static int[][] populateMatrix(int value, int low, int high, int[][] output) {
+		// TODO Auto-generated method stub
+		if(low==high)
+		{
+			output[low][low]=value;
+			return output;
+		}
+		for(int i=low;i<=high;i++)
+		{
+			output[low][i]=value;
+			output[i][low]=value;
+			output[high][i]=value;
+			output[i][high]=value;
+			
+		}
+		output=populateMatrix(value-1, low+1, high-1, output);
+		return output;
+	}
+
+}

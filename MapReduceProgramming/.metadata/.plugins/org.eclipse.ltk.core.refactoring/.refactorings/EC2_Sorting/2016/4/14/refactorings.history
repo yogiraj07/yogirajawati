@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;EC2_Sorting/src/com/ec2/sortNode/TextSocket (1).java&apos; to &apos;TextSocket.java&apos;" description="Rename resource &apos;TextSocket (1).java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/ec2/sortNode/TextSocket (1).java" name="TextSocket.java" stamp="1459555680632" updateReferences="true"/>
+</session>

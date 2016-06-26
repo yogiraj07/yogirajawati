@@ -1,0 +1,130 @@
+package custom.mr;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import custom.mr.utils.FileIO;
+import custom.mr.utils.ProcessUtils;
+import custom.mr.utils.TextSocket;
+
+/**
+ * Driver class for Reducer phase of the framework.
+ * This class will be run be the Master once the input file for Reducer has been
+ * send to the EC2 instance.
+ * Once this class is called, the current instance acts as a Reducer. 
+ * After successfully writing the Reducer output, it will send an acknowledgement
+ * to the Master that the "part-files" are ready to be pulled.
+ * <ul>
+ * USAGE: java -jar xxx.jar ReducerDriver <clusterId>
+ * 
+ * @author Ashish Kalbhor, Yogiraj Awati, Sarita Joshi, Sharmodep Sarkar
+ *
+ */
+public class ReducerDriver 
+{
+	public static int reducerId = 0; 
+	public static String reducerClassName = "";
+	/**
+	 * Driver Method.
+	 * 
+	 * ARG: clusterId
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+		String reducerInputFolder;
+		
+		reducerId = Integer.parseInt(args[0]);
+		
+		if(!Job.isPseudoMode)
+		{
+			reducerInputFolder = "/tmp/r" + reducerId + "folder";
+			reducerClassName = getReducerClassName();
+		}else
+		{
+			reducerInputFolder= "/tmp/allMapperOutput/r" + reducerId + "folder";
+			reducerClassName = LocalJobClient.reducerClassName;
+		}
+		
+		// Run Mapper on it.
+		System.out.println("ReducerClass for Name: " + reducerClassName);
+		
+		FileIO<Object, Object, Object, Object> fileIO = new FileIO<>();
+		
+		File folder = new File(reducerInputFolder);
+		for (final File fileEntry : folder.listFiles()) 
+		{			
+	        try 
+	        {
+	        	String keyFilePath = reducerInputFolder + "/" + fileEntry.getName();
+				fileIO.reduceOnEachKey(reducerClassName, keyFilePath, fileEntry.getName(), reducerId);	        	
+	        	
+			} catch (Exception e) 
+	        {
+				e.printStackTrace();
+			}  
+	    }
+		
+		if(Job.isPseudoMode)
+		{
+			System.out.println("Reducer " + reducerId + " success");
+		}
+		
+		// Once done, send the output as well as ACK to Master
+		try 
+		{
+			int toPort = ProcessUtils.LISTEN_PORT+reducerId;
+			String masterIPAddr = getMasterIPAddress();
+			TextSocket conn = new TextSocket(masterIPAddr, toPort);
+			System.out.println("Sending data to Master : "+ toPort);
+			ProcessUtils.sendDataBySCP("/tmp/part-" + reducerId, masterIPAddr);
+			conn.putln(reducerId + ":" + ProcessUtils.REDUCER_SUCCESS);
+			//conn.close();
+		} catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	private static String getReducerClassName()
+	{
+		String redClassName = "";
+		try 
+		{
+			
+			BufferedReader redInfoReader = new BufferedReader(new FileReader("/tmp/reducerInfo.txt"));
+			redClassName = redInfoReader.readLine(); 
+			redInfoReader.close();
+		} catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+		return redClassName;
+	}
+	
+	/**
+	 * Returns the Master Node IP Address that is written in Master.txt
+	 * 
+	 * @return masterIpAddress
+	 */
+	private static String getMasterIPAddress()
+	{
+		String masterIp = null;
+		try 
+		{
+			BufferedReader masterReader = new BufferedReader(new FileReader(ProcessUtils.MASTER_IP_FILENAME));
+			masterIp = masterReader.readLine();
+			masterReader.close();
+			return masterIp;
+		} catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+		return masterIp;
+	}
+	
+}

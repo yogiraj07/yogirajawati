@@ -1,0 +1,216 @@
+package custom.mr;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import custom.mr.utils.ProcessUtils;
+import custom.mr.utils.RunShellScript;
+import custom.mr.utils.TextSocket;
+
+public class LocalJobClient 
+{
+	public static String mapperClassName;
+	public static String reducerClassName;
+	public static String inputPath;
+	public static String outputPath;
+	public static int numReducerTasks;
+	public static int numMapperTasks;
+	
+	public LocalJobClient(int numReducerTasks, int numMapperTasks, String inputPath, String outputPath, String mapperClassName, String reducerClassName)
+	{
+		this.mapperClassName = mapperClassName;
+		this.reducerClassName = reducerClassName;
+		this.inputPath = inputPath;
+		this.outputPath = outputPath;
+		this.numReducerTasks = numReducerTasks;
+		this.numMapperTasks = numMapperTasks;
+	}
+
+	/*public LocalJobClient(int numMapperTasks, int numReducerTasks, String inputPath, String outputPath, String mapperClassName, String reducerClassName) 
+	{
+		this.numMapperTasks = 
+	}
+	*/
+	public boolean waitForCompletion() 
+	{
+		try 
+		{
+			// S3 code to get total size of bucket
+			// divide based on pre-defined block size
+			// make local copy of file list
+			//System.out.println("Running data splitter..");
+			//DataSplitter splitterObj = new DataSplitter();
+			//numMapperTasks = splitterObj.split(ProcessUtils.DNS_LIST_FILE_NAME, inputPath);
+			//numMapperTasks = 1;
+			
+			// SCP the fileList to all the slaves
+			RunShellScript shellScriptObj = new RunShellScript();
+			//shellScriptObj.runScript("dataShipper.sh");
+			//System.out.println("x.txt successfully shipped");
+			// Data has been shipped to the Slaves.
+			//shellScriptObj.runScript("startSlaves.sh " + inputPath);
+			//System.out.println("All slaves successfully started");
+			
+			// AT THIS POINT WITH SLAVE: x.txt, jar, master 
+			
+			//Context context = new Context(this.outputPath);
+			
+			// Ready the space for incoming MapperOutput
+			//ProcessUtils.makeFolder(ProcessUtils.ALL_MAPPER_OUTPUT_LOC);
+			ProcessUtils.makeFolder(ProcessUtils.ALL_MAPPER_OUTPUT_LOC);
+			
+			System.out.println("Starting the Mapper on pseudo mode");
+			//numMapTasks = 1;
+			
+			// Call the Slave Driver. Send them the MapperClass
+		
+			//BufferedReader ec2IpReader = new BufferedReader(new FileReader(ProcessUtils.DNS_LIST_FILE_NAME)); 
+			
+			// Skip the Master IP Address (first Line)
+			//String ips[] = ec2IpReader.readLine().split(" ");
+			
+			//String ipAddress = "";
+			//int i = 0;
+			// ConnectionThread[] connThread  = new ConnectionThread[numMapTasks];
+			//ArrayList<ConnectionThread> connThread = new ArrayList<ConnectionThread>();
+			
+			//while(null != (ipAddress = ec2IpReader.readLine()))
+			/*for(i=1; i <= numMapperTasks; i++)
+			{
+				String requestMsg = ProcessUtils.START_MAPPER + ":" + mapperClassName + ":" + reducerClassName;	
+				connThread.add(new ConnectionThread(ips[i], ProcessUtils.INIT_PORT + i, requestMsg));
+				//System.out.println("Requesting " + ipAddress + " for starting mapper");
+				connThread.get(i-1).start();
+				//i++;
+			}
+			
+			ec2IpReader.close();
+			i--;
+			// Now, proceed ahead only when all the Mapper outputs are done.
+			while(i > 0)
+			{
+				connThread.get(i-1).join();
+				i--;
+			}*/
+			/*Runnable mapperThread = new Runnable() 
+			{	
+				@Override
+				public void run() 
+				{
+					SlaveDriver.main(new String[]{inputPath});
+				}
+			};*/
+			numMapperTasks = 2;
+			
+			LocalMapperThread[] mapperThreads = new LocalMapperThread[numMapperTasks];
+			// Input should be of the format input0, input1..
+			for(int i = 0; i < numMapperTasks; i++)
+			{
+				mapperThreads[i] = new LocalMapperThread(inputPath + "//input" + i);
+				mapperThreads[i].start();
+			}
+			
+			for(int i = 0; i < numMapperTasks; i++)
+			{
+				mapperThreads[i].join();
+			}
+			
+			System.out.println("Mappers have finished their task.");
+			
+			// Broadcast "kill-all" to idle SlaveDrivers
+			/*for(i = numMapperTasks + 1; i < ips.length; i++)
+			{
+				String requestMsg = ProcessUtils.KILL_SLAVE_DRIVER;	
+				int toPort = ProcessUtils.INIT_PORT + i;
+				System.out.println("Creating socket at " + ips[i] + ":" + toPort);				
+				TextSocket conn = new TextSocket(ips[i], toPort);
+				conn.putln(requestMsg);
+				System.out.println("Killing Idle SlaveDriver at " + ips[i] + ":" + toPort);
+				conn.close();				
+			}*/
+			
+			// Now all the mapper outputs are in /tmp/outputx/
+			// TODO Process all the key files and define partitions.
+			// And send these partitions to reducers and wait for ACK from Reducers.
+			
+			// Move all the individual Mapper outputs in a combined folder
+			/*for(int k = 0; k<ips.length-1;k++) 
+			{
+				ProcessUtils.moveFolder("/tmp/output" + k, ProcessUtils.ALL_MAPPER_OUTPUT_LOC);
+			}
+			
+			// Move the scripts to Combined Mapper Output folder
+			ProcessUtils.moveFolder("/tmp/createReducerInput", ProcessUtils.ALL_MAPPER_OUTPUT_LOC);
+			ProcessUtils.moveFolder("/tmp/mergeMapperOutput", ProcessUtils.ALL_MAPPER_OUTPUT_LOC);
+			
+			System.out.println("Generating summary of Mapper output");
+			shellScriptObj.runScript("allMapperOutput/mergeMapperOutput");
+			
+			System.out.println("Generating reducer text files..");
+			PartitionHelper.createPartitions(ProcessUtils.ALL_MAPPER_OUTPUT_LOC + "/summary", "allMapperOutput/r", numReducerTasks);
+			
+			System.out.println("Merging similar key values");
+			System.out.println("Reducers are working.. Waiting for their ACK");*/
+			
+			/*try
+			{
+				ListenerThread[] listenerThreads = new ListenerThread[numReducerTasks];
+				
+				for(i=0;i<numReducerTasks;i++)
+				{
+					listenerThreads[i] = new ListenerThread(ProcessUtils.LISTEN_PORT+i);
+					listenerThreads[i].start();
+				}
+				
+				
+				//hasReduced = true;
+			
+			if(waitForReducers())
+			{
+				System.out.println("All reducers have written their output.");
+			}
+				//writeReducerInfo(reducerClassName);
+				shellScriptObj.runScript("allMapperOutput/createReducerInput");
+				
+				for(i=0;i<numReducerTasks;i++)
+				{
+					listenerThreads[i].join();
+				}
+				
+				// Push the output to S3 bucket
+				shellScriptObj.runScript("exportTos3.sh " + outputPath);
+				System.out.println("Export to " + outputPath);
+				
+			} catch (InterruptedException e) 
+			{
+				e.printStackTrace();
+			}*/
+		} catch (InterruptedException e) 
+		{
+			e.printStackTrace();
+		}
+		
+		return true;
+	}
+}
+
+class LocalMapperThread extends Thread
+{
+	String mapperInputPath;
+	Context context;
+	
+	public LocalMapperThread(String mapperInputCompletePath, Context context) 
+	{
+		this.mapperInputPath = mapperInputCompletePath;
+		this.context = context;
+	}
+	
+	@Override
+	public void run() 
+	{
+		System.out.println("Starting slave driver thread on " + mapperInputPath);
+		SlaveDriver.main(new String[]{mapperInputPath});
+	}
+}

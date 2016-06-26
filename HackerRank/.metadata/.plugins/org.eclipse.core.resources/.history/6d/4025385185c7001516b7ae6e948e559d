@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+
+public class Solution {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          prettyPrint(5);
+	}
+
+	private static void prettyPrint(int i) {
+		// TODO Auto-generated method stub
+		int[][]output=new int[2*i-1][2*i-1];
+		output=populateMatrix(i,0,2*i-2,output);
+		ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+		ArrayList<Integer> temp = new ArrayList<Integer>();
+		for(int k=0;k<=2*i-2;k++)
+		{
+			for(int l =0;l<=2*i-2;l++)
+				//System.out.print(output[k][l]+" ");
+				temp.add(output[k][l]);
+ 		    //System.out.println();
+			result.add(temp);
+			temp.removeAll(temp);
+		}
+		System.out.println(result);
+	}
+
+	private static int[][] populateMatrix(int value, int low, int high, int[][] output) {
+		// TODO Auto-generated method stub
+		if(low==high)
+		{
+			output[low][low]=value;
+			return output;
+		}
+		for(int i=low;i<=high;i++)
+		{
+			output[low][i]=value;
+			output[i][low]=value;
+			output[high][i]=value;
+			output[i][high]=value;
+			
+		}
+		output=populateMatrix(value-1, low+1, high-1, output);
+		return output;
+	}
+
+}

@@ -37,7 +37,7 @@ public class LinkedList {
     //Node n is inserted at the end of the current list
     public void intersectNode(Node n)
     {
-    	Node currentNode = header;
+    	Node currentNode = this.header;
     	//traverse till the end of the list
     	while(currentNode.getNext()!=null)
     	{
@@ -62,12 +62,12 @@ public class LinkedList {
     
     //return Node of the desired Value
   	private  Node getNode(int i) {
-  		Node currentNode = header;
+  		Node currentNode = header.getNext();
       	while(currentNode.getData()!=i)
       	{
       		currentNode=currentNode.getNext();
       	}
-  		return  currentNode.getNext()==null?null:currentNode;
+  		return  currentNode==null?null:currentNode;
   	}
   	
   	//to display contents of the object
@@ -90,15 +90,15 @@ public class LinkedList {
        LinkedList A = new LinkedList();
        A.addNode(11);
        A.addNode(12);
-       A.addNode(13);
-       A.addNode(14);
-       A.addNode(15);
+      A.addNode(13);
+      A.addNode(14);
+      A.addNode(15);
        Node intersectingNode = A.getNode(12);
        LinkedList B = new LinkedList();
-       B.addNode(30);
-       B.addNode(40);
-       B.addNode(50);
-       B.addNode(60);
+//      B.addNode(30);
+//       B.addNode(40);
+//       B.addNode(50);
+//       B.addNode(60);
        B.addNode(70);
        //List B intersect with list A
        if(intersectingNode != null)
@@ -108,7 +108,7 @@ public class LinkedList {
       System.out.println("List A : "+A);
       System.out.println("List B : "+B);
       Node intersection=null;
-      intersection=checkIntersection(B,A);
+      intersection=checkIntersection(A,B);
       if(intersection!=null)
       {
     	  System.out.println("Two List intersects at :"+intersection.getData());
@@ -153,10 +153,13 @@ public class LinkedList {
 		
 		//traverse both lists and check for each element whether both is same
 		//if same element found, return the Node
-		while(currentOfB.getNext()!=null)
+		while(currentOfB!=null)
 		{
 			if (currentOfB.getData()==currentOfA.getData())
+			{
 				return currentOfB;
+			}
+				
 			currentOfA=currentOfA.getNext();
 			currentOfB=currentOfB.getNext();
 		}

@@ -35,6 +35,7 @@ public class SequentialProcess {
 			Reader r = new InputStreamReader(inputFile, "ASCII");
 			// using CSV parser
 			CSVReader input = new CSVReader(r);
+			
 			// extract column names from the file
 			fileColoumns = new ArrayList<String>(Arrays.asList(input.readNext()));
 			// Stores data of one line at a time

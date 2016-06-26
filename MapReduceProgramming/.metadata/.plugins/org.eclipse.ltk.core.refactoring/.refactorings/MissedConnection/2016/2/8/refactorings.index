@@ -1,0 +1,7 @@
+1455749048813	Rename type 'RegressionMapper'
+1455749068448	Rename type 'RegressionReducer'
+1455754850220	Rename field 'originList'
+1455757601539	Rename local variable 'time'
+1455757759961	Rename local variable 'arrvTime'
+1455757772666	Rename local variable 'arrActualTime'
+1455757817603	Rename local variable 'deptTime'

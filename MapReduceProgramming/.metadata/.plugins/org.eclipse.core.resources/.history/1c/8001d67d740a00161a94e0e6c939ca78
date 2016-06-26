@@ -1,0 +1,8 @@
+package custom.mr;
+import java.io.IOException;
+
+
+public abstract class Mapper <KEYIN, VALUEIN, KEYOUT, VALUEOUT>
+{
+	public abstract void map(Object key, Object value, Context context) throws IOException, InterruptedException; 
+}

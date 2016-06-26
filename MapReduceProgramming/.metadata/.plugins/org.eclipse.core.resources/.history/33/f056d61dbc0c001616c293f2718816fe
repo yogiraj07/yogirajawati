@@ -1,0 +1,9 @@
+package custom.mr;
+
+import java.io.IOException;
+
+public abstract class Reducer <KEYIN, VALUEIN, KEYOUT, VALUEOUT>
+{
+	//public abstract void reduce(Text key, Iterable<Object> values, Context context) throws IOException, InterruptedException ;
+	public abstract <I> void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException ;
+}

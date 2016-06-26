@@ -1,0 +1,140 @@
+package custom.mr.utils;
+
+import java.util.List;
+import com.amazonaws.auth.AWSCredentials;
+import com.amazonaws.auth.profile.ProfileCredentialsProvider;
+import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.AmazonS3Client;
+import com.amazonaws.services.s3.model.S3ObjectSummary;
+import com.amazonaws.services.s3.model.*;
+import java.io.*;
+import java.util.*;
+
+//Author : Sharmo and Sarita
+
+public class DataSplitter 
+{
+
+
+	private static final String SUFFIX = "/";
+
+	
+	public int split(String DNSList , String inputBucket) 
+	{
+		int numMapTasks = 0;
+		// credentials object identifying user for authentication
+		// user must have AWSConnector and AmazonS3FullAccess for this to work		
+
+		AWSCredentials credentials = new ProfileCredentialsProvider().getCredentials();
+		
+		// create a client connection based on credentials
+		AmazonS3 s3client = new AmazonS3Client(credentials);
+
+		int numberOfMappers = 0;
+
+		BufferedReader br = null;
+
+		try 
+		{
+
+			String sCurrentLine;
+
+			br = new BufferedReader(new FileReader(DNSList));
+
+			while ((sCurrentLine = br.readLine()) != null) {
+				numberOfMappers++;
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+
+		//object Listing
+		long totalSize = 0 ;
+		int totalElements = 0;
+		long maxSize = 0;
+		String inputBucketName = inputBucket.substring(5);
+		HashMap fileList = new HashMap ();
+		ObjectListing objectListing = s3client.listObjects(new ListObjectsRequest().withBucketName(inputBucketName));
+		for(S3ObjectSummary sb: objectListing.getObjectSummaries()){
+			long size = sb.getSize();
+			totalSize += size;
+			totalElements ++;
+			if (size>maxSize)
+				maxSize = size;
+			fileList.put(sb.getKey() , sb.getSize());
+		}
+		System.out.println("Total Size = " + totalSize);
+		System.out.println("Total Number of Files = " + (totalElements));
+		long blockSize = 0;
+
+		if (totalElements > numberOfMappers)
+			blockSize = totalSize / numberOfMappers;
+		else
+			blockSize = totalSize / totalElements;
+
+		System.out.println( " BlockSize = " + blockSize);
+		System.out.println(" Number of Mappers = " + numberOfMappers );
+
+		Map<String, Long> sortedFileList = sortByValues(fileList);
+
+		long chunkCounter = 0;
+		int blockNumber = 0;
+		String fileSuffix = ".txt";
+		try 
+		{
+		BufferedWriter writer = new BufferedWriter(new FileWriter(blockNumber+fileSuffix, true));
+			Set set2 = sortedFileList.entrySet();
+	        Iterator iterator2 = set2.iterator();
+	         while(iterator2.hasNext()) {
+	         	Map.Entry fileDetails = (Map.Entry)iterator2.next();
+				long size = (long)fileDetails.getValue();
+				String name = fileDetails.getKey()+"";
+
+				if (chunkCounter+size <= blockSize){
+					chunkCounter+=size;
+					writer.write(name + "\n");
+					
+				}
+				else{
+					chunkCounter = 0;
+					blockNumber++;
+					writer.close();
+					writer = new BufferedWriter(new FileWriter(blockNumber+fileSuffix, true));
+					writer.write(name + "\n");
+					
+				}
+
+			}
+	         writer.close();
+	         numMapTasks++;
+		} catch (Exception e) 
+				{
+					e.printStackTrace();
+				}
+		return numMapTasks;
+	}
+
+	private static HashMap sortByValues(HashMap map) { 
+       List list = new LinkedList(map.entrySet());
+       // Defined Custom Comparator here
+       Collections.sort(list, new Comparator() {
+            public int compare(Object o1, Object o2) {
+               return ((Comparable) ((Map.Entry) (o1)).getValue())
+                  .compareTo(((Map.Entry) (o2)).getValue());
+            }
+       });
+
+       // Here I am copying the sorted list in HashMap
+       // using LinkedHashMap to preserve the insertion order
+       HashMap sortedHashMap = new LinkedHashMap();
+       for (Iterator it = list.iterator(); it.hasNext();) {
+              Map.Entry entry = (Map.Entry) it.next();
+              sortedHashMap.put(entry.getKey(), entry.getValue());
+       } 
+       return sortedHashMap;
+  }
+	
+	
+}

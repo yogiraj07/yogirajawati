@@ -1,5 +1,0 @@
-package com.mapreduce.main;
-
-public class CsvGzReader {
-
-}

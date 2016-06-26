@@ -2,8 +2,300 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19ad545d-f9c7-4476-b38f-1a3f8d7e4ec7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Examples/practice.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Examples/salimcrawler.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/10/e0786685c6bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/11/900daa47a9bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/13/20c1b95fc0bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/13/50e1853ca9bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/14/a0d7fae3c3bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/17/a00e58b6a8bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/19/101ed293bdbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/1b/e0a50afac1bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/20/b09789c5a6bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/21/202c268dc0bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/24/80da9b96bfbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/26/10de71fabfbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/27/70d647ebbebc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/28/e0acdef7bbbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/29/2055eee5c1bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/2b/d0add16abfbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/2f/10511921e8bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/2f/d02c27d0bcbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/34/f07d945abdbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/35/20aba29bc0bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/36/10e5fee2bbbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/37/b097e0e3a9bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/39/4011aca2bbbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/4/40447860c2bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/4/40ce2da4c6bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/4a/601e8c52c2bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/4a/b05d975dbdbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/4c/206b824bbcbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/4c/b0b99d85bfbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/4d/a05c8b49e9bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/5/70b78a95a5bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/50/a0f0280caabc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/52/50f790cbc6bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/53/50e6b29de8bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/54/90ad81fda8bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/59/70ed2967bdbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/5d/c0a15e85a7bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/5e/a0ccc301c0bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/6/503f542ba7bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/6/e0d38172bdbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/64/10b12cc2a6bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/65/a0d933adbfbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/70/d0276ccee7bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/79/b0de4a5aa5bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/79/d0e6c82dbdbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/7a/9027515daabc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/7b/f098ed87c6bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/7c/807b3f6da9bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/7e/c0241393c6bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/7e/c035cdaea8bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/80/407c8f3cbfbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/81/e0f1cfeabfbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/84/3093fc30c0bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/86/a05d0b54bdbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/8f/403983c0c6bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/8f/a0469f71bebc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/94/c006f543a7bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/98/d0e31743c0bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/9d/d02853adbcbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/a1/601fe62ca6bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/a4/c0c7288bbbbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/a6/10e30117aabc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/a7/30a061cde8bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/a7/d09465adbbbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/a8/10286ab2a7bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/ae/90fb23bfbfbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/b0/5040c982e8bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/b0/d0bc094ebdbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/b7/d0ce7882c6bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/b7/e02d2f30bcbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/b9/907a24bce8bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/bd/20e2c3e8a7bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/bd/e0180627bdbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/c1/c0efca50a9bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/c6/00a68c43bdbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/c7/30816d79aabc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/c8/30047cb4bfbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/c9/2002b10da8bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/c9/f02f4edda6bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/ce/8068abdbbebc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/cf/005ef0cfbfbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/cf/00a05cc5c1bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/cf/20e0789ec1bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/cf/d0030c70bbbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/d/50f87b85a8bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/d/90427023aabc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/d2/70697e25a7bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/d6/80c09ddaa7bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/d7/e0dc5969a9bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/d9/7060dfe0bbbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/da/20794cffc1bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/da/c039c463a8bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/da/f006619fa5bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/dc/20ed2f66a9bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/e0/601789d0c6bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/e0/b0f65bf9bebc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/e5/201b1de2bcbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/e5/6021956abcbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/e5/f0061a65c2bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/e9/706eb860aabc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/ea/40cd3060bdbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/eb/8018b3b0c3bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/f0/30bb60a6c3bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/f0/40a185eaa5bc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/f1/3083f46fc6bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/f2/909d7badaabc0015133cc0378b336423" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/f6/50055a77bcbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/f7/d0670c47c6bc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.history/f9/60418d1fbdbc00151ea7e9ceec85b7b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/LinkListIntersection/.indexes/af/history.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/LinkListIntersection/.indexes/e4/81/a6/98/history.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/LinkListIntersection/.markers.snap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/LinkListIntersection/.syncinfo.snap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.root/2.tree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/2.snap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Algorithms/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/1/e0d7ff8fe2bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/16/006a7d78e8bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/16/60d38b66e6bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/18/009f976ae3bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/1c/300a1f5dddbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/20/50bb6250e9bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/22/7076138bc8bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/34/d0030af2dcbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/35/c0ce5c2addbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/38/10cc2e10e7bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/3e/80945e08e1bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/45/704fcc4dddbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/4e/e0194dd5dbbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/51/402162aae9bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/51/f05b8170ecbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/5b/80cbed2adabb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/5c/00882b35ddbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/5e/d0506e71e8bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/5f/90c48c25e7bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/69/b0014684eabb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/6b/d07af2f8dfbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/6c/006eb6e7dcbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/6d/b0a50404e0bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/6e/400c7d90e4bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/73/b029c2e4dbbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/74/f08bfca5e3bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/76/605e5686dabb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/78/1004b923e9bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/79/30426a36e0bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/7d/d0c8caa7cebb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/7e/706e7b9aeabb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/89/105dad4643ba001519e0916dbd0105c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/9/70ff92e8e9bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/98/201a724de0bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/9f/d02065a7dcbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/a/100faff0d9bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/a0/e065a787cebb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/a2/60354936cfbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/a4/60a33969e8bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/a6/2062967aecbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/b6/50ee9c5beebb00151e18ad9950885d21" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/bc/e02a47d9dbbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/bd/d07649bbcabb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/bf/102e30aae4bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/c0/5091a31343ba001519e0916dbd0105c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/c3/b02209f1e9bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/c5/20acd165dbbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/c5/e0ce8bf298bb00151960db966448f8c6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/ca/d08339ebe8bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/ce/60841e7ccebb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/cf/108921dfe5bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/dc/20886c7799bb00151960db966448f8c6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/de/a0b9ae22e1bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/df/706e6a11e9bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/e1/30abadc8cebb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/e2/d0787631e9bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/f6/30e5614ae6bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/f7/4073f5f9dcbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/f9/a06da4e0e7bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/fc/20b97743e6bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/fc/803ae603dbbb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/fd/a05769becebb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.history/ff/20f9f5b9e8bb00151ddec90d535b31c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.projects/InClassExercise/.indexes/af/history.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.projects/InClassExercise/.indexes/e4/history.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.projects/InClassExercise/.markers" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.projects/Yogiraj_SequentialAnalysis/.indexes/af/history.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.projects/Yogiraj_SequentialAnalysis/.indexes/e4/81/c2/b9/history.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.root/7.tree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_0.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_0.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_0.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/segments_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.jdt.core/580180734.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_0.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_0_1.del" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_1.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments_3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/63c10a2a96968e349145e79cdc7a5c93/_0.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/63c10a2a96968e349145e79cdc7a5c93/segments_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_0.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_0_1.del" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_2.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_3.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments_3" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.mylyn/.tasks.xml.zip" afterPath="$PROJECT_DIR$/../Algorithms/.metadata/.mylyn/.tasks.xml.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.mylyn/tasks.xml.zip" afterPath="$PROJECT_DIR$/../Algorithms/.metadata/.mylyn/tasks.xml.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterPath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.mylyn/.tasks.xml.zip" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.mylyn/.tasks.xml.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.mylyn/tasks.xml.zip" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.mylyn/tasks.xml.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.projects/InClassExercise/org.eclipse.jdt.core/state.dat" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.projects/InClassExercise/org.eclipse.jdt.core/state.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.projects/Yogiraj_SequentialAnalysis/.markers" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.projects/Yogiraj_SequentialAnalysis/.markers" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.projects/Yogiraj_SequentialAnalysis/org.eclipse.jdt.core/state.dat" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.projects/Yogiraj_SequentialAnalysis/org.eclipse.jdt.core/state.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/segments.gen" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/segments.gen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments.gen" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments.gen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/63c10a2a96968e349145e79cdc7a5c93/segments.gen" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/63c10a2a96968e349145e79cdc7a5c93/segments.gen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments.gen" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments.gen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/Yogiraj_SequentialAnalysis/bin/com/mapreduce/main/SequentialProcess.class" afterPath="$PROJECT_DIR$/../MapReduceProgramming/Yogiraj_SequentialAnalysis/bin/com/mapreduce/main/SequentialProcess.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PageRankAlgorithm/Source_Code/PageRank/bin/com/pagerank/CalculatePageRank/CalculatePageRank.class" afterPath="$PROJECT_DIR$/../PageRankAlgorithm/Source_Code/PageRank/bin/com/pagerank/CalculatePageRank/CalculatePageRank.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentimental_Analysis/bin/ir/classifier/ValueComparator.class" afterPath="$PROJECT_DIR$/../Sentimental_Analysis/bin/ir/classifier/ValueComparator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentimental_Analysis/bin/ir/classifier/WordProb.class" afterPath="$PROJECT_DIR$/../Sentimental_Analysis/bin/ir/classifier/WordProb.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentimental_Analysis/bin/ir/classifier/nbtest.class" afterPath="$PROJECT_DIR$/../Sentimental_Analysis/bin/ir/classifier/nbtest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentimental_Analysis/bin/ir/classifier/nbtrain.class" afterPath="$PROJECT_DIR$/../Sentimental_Analysis/bin/ir/classifier/nbtrain.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Yogiraj_SearchEngine/SourceCode/SearchEngine/bin/com/searchengine/BM25Algorithm/BM25.class" afterPath="$PROJECT_DIR$/../Yogiraj_SearchEngine/SourceCode/SearchEngine/bin/com/searchengine/BM25Algorithm/BM25.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Yogiraj_SearchEngine/SourceCode/SearchEngine/bin/com/searchengine/invertedindex/Indexer.class" afterPath="$PROJECT_DIR$/../Yogiraj_SearchEngine/SourceCode/SearchEngine/bin/com/searchengine/invertedindex/Indexer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.log" afterPath="$PROJECT_DIR$/../Algorithms/.metadata/.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterPath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterPath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterPath="$PROJECT_DIR$/../Algorithms/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Algorithms/.metadata/version.ini" afterPath="$PROJECT_DIR$/../Algorithms/.metadata/version.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Algorithms/.recommenders/caches/identified-project-coordinates.json" afterPath="$PROJECT_DIR$/../Algorithms/.recommenders/caches/identified-project-coordinates.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.log" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.ui.prefs" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.ui.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.recommenders.rcp.prefs" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.recommenders.rcp.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.debug.ui/dialog_settings.xml" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.debug.ui/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.egit.ui/dialog_settings.xml" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.egit.ui/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/server-config.json" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/server-config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.ltk.ui.refactoring/dialog_settings.xml" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.ltk.ui.refactoring/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/version.ini" afterPath="$PROJECT_DIR$/../MapReduceProgramming/.metadata/version.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MapReduceProgramming/Yogiraj_SequentialAnalysis/src/com/mapreduce/main/SequentialProcess.java" afterPath="$PROJECT_DIR$/../MapReduceProgramming/Yogiraj_SequentialAnalysis/src/com/mapreduce/main/SequentialProcess.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PageRankAlgorithm/Source_Code/PageRank/.classpath" afterPath="$PROJECT_DIR$/../PageRankAlgorithm/Source_Code/PageRank/.classpath" />
     </list>
     <ignored path="Dynamic Programming.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,31 +316,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="minCostPath.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="minCostPath.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Examples/minCostPath.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.4473684">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="avoidRoads.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/set2/avoidRoads.py">
+      <file leaf-file-name="minimumCoins.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Examples/minimumCoins.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="practice.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="practice.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Examples/practice.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19058296">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="28" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -58,9 +350,33 @@
         <entry file="file://$PROJECT_DIR$/Examples/longestIncreasingSequence.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="38" />
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LongestPathFromCharacter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/set1/LongestPathFromCharacter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Problem.JPG" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/set1/Problem.JPG">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mincost.JPG" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Examples/mincost.JPG">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -68,7 +384,7 @@
         <entry file="file://$PROJECT_DIR$/set2/zigZag.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="80" column="48" selection-start-line="55" selection-start-column="0" selection-end-line="80" selection-end-column="48" />
+              <caret line="73" column="98" selection-start-line="73" selection-start-column="90" selection-end-line="73" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -84,11 +400,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flowerGardenProblem.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/set2/flowerGardenProblem.py">
+      <file leaf-file-name="salimcrawler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Examples/salimcrawler.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -112,22 +428,23 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Examples/minCostPath.py" />
-        <option value="$PROJECT_DIR$/Examples/minimumCoins.py" />
         <option value="$PROJECT_DIR$/Examples/set2/zigZag.py" />
         <option value="$PROJECT_DIR$/Examples/longestIncreasingSequence.py" />
-        <option value="$PROJECT_DIR$/set2/zigZag.py" />
         <option value="$PROJECT_DIR$/set2/flowerGardenProblem.py" />
         <option value="$PROJECT_DIR$/set2/badNeighbor.py" />
         <option value="$PROJECT_DIR$/set2/avoidRoads.py" />
         <option value="$PROJECT_DIR$/Examples/practice.py" />
+        <option value="$PROJECT_DIR$/Examples/minimumCoins.py" />
+        <option value="$PROJECT_DIR$/Examples/salimcrawler.py" />
+        <option value="$PROJECT_DIR$/set2/zigZag.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1320" />
-    <option name="height" value="784" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -154,6 +471,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -171,6 +489,24 @@
               <option name="myItemId" value="Dynamic Programming" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="set2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dynamic Programming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dynamic Programming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="set1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -186,10 +522,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dynamic Programming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dynamic Programming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -197,24 +542,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../README.md" />
   </component>
-  <component name="RunManager" selected="Python.practice">
-    <configuration default="false" name="zigZag" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/set2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Dynamic Programming" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/set2/zigZag.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.salimcrawler">
     <configuration default="false" name="badNeighbor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -228,23 +556,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Dynamic Programming" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/set2/badNeighbor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="flowerGardenProblem" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/set2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Dynamic Programming" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/set2/flowerGardenProblem.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -279,6 +590,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Dynamic Programming" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Examples/practice.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="longestIncreasingSequence" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Dynamic Programming" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Examples/longestIncreasingSequence.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="salimcrawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Dynamic Programming" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Examples/salimcrawler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -406,19 +751,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.zigZag" />
-      <item index="1" class="java.lang.String" itemvalue="Python.badNeighbor" />
-      <item index="2" class="java.lang.String" itemvalue="Python.flowerGardenProblem" />
-      <item index="3" class="java.lang.String" itemvalue="Python.avoidRoads" />
-      <item index="4" class="java.lang.String" itemvalue="Python.practice" />
+      <item index="0" class="java.lang.String" itemvalue="Python.badNeighbor" />
+      <item index="1" class="java.lang.String" itemvalue="Python.avoidRoads" />
+      <item index="2" class="java.lang.String" itemvalue="Python.practice" />
+      <item index="3" class="java.lang.String" itemvalue="Python.longestIncreasingSequence" />
+      <item index="4" class="java.lang.String" itemvalue="Python.salimcrawler" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.practice" />
-        <item index="1" class="java.lang.String" itemvalue="Python.avoidRoads" />
-        <item index="2" class="java.lang.String" itemvalue="Python.badNeighbor" />
-        <item index="3" class="java.lang.String" itemvalue="Python.flowerGardenProblem" />
-        <item index="4" class="java.lang.String" itemvalue="Python.zigZag" />
+        <item index="0" class="java.lang.String" itemvalue="Python.salimcrawler" />
+        <item index="1" class="java.lang.String" itemvalue="Python.longestIncreasingSequence" />
+        <item index="2" class="java.lang.String" itemvalue="Python.practice" />
+        <item index="3" class="java.lang.String" itemvalue="Python.avoidRoads" />
+        <item index="4" class="java.lang.String" itemvalue="Python.badNeighbor" />
       </list>
     </recent_temporary>
   </component>
@@ -443,12 +788,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25383437" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532943" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29777777" sideWeight="0.51457053" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2976378" sideWeight="0.52342606" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.4973585" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -459,7 +804,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29777777" sideWeight="0.48542944" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2976378" sideWeight="0.47657394" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -486,6 +831,21 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/set2/badNeighbor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="75" selection-start-line="61" selection-start-column="75" selection-end-line="61" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/set2/flowerGardenProblem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Examples/minCostPath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -498,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -538,7 +897,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -562,7 +920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -594,7 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -610,7 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,7 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -665,7 +1019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,7 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -736,7 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -778,41 +1129,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/minimumCoins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="52" selection-start-line="16" selection-start-column="0" selection-end-line="18" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/minCostPath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/set2/avoidRoads.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/set2/flowerGardenProblem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/longestIncreasingSequence.py">
+    <entry file="file://$PROJECT_DIR$/Examples/salimcrawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="38" />
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/set2/zigZag.py">
+    <entry file="file://$PROJECT_DIR$/set1/Problem.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/set1/LongestPathFromCharacter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="48" selection-start-line="55" selection-start-column="0" selection-end-line="80" selection-end-column="48" />
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -825,18 +1180,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/set2/flowerGardenProblem.py">
+    <entry file="file://$PROJECT_DIR$/set2/zigZag.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+          <caret line="73" column="98" selection-start-line="73" selection-start-column="90" selection-end-line="73" selection-end-column="98" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/practice.py">
+    <entry file="file://$PROJECT_DIR$/Examples/minimumCoins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19058296">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/mincost.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/longestIncreasingSequence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/minCostPath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4473684">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,5 @@
+package custom.mr.utils;
+
+public class Configuration {
+
+}

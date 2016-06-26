@@ -1,0 +1,225 @@
+
+import java.util.ArrayList;
+
+class Vertex {
+	int h, excessFlow;
+	 
+    Vertex(int h, int flow)
+    {
+        this.h = h;
+        this.excessFlow = flow;
+    }
+}
+
+class Edge {
+	int flow;
+	int capacity;
+	int u;
+	int v;
+	
+	Edge(int flow, int capacity, int u, int v)
+    {
+        this.flow = flow;
+        this.capacity = capacity;
+        this.u = u;
+        this.v = v;
+    }
+}
+
+public class Graph {
+	int V;
+	ArrayList<Vertex> ver;
+	ArrayList<Edge> edg;
+	
+	
+	Graph(int V)
+	{
+	    this.V = V;
+	    // all vertices are initialized with 0 height
+	    // and 0 excess flow
+	    ver =new ArrayList<Vertex>();
+	    edg=new ArrayList<Edge>();
+	    for (int i = 0; i < V; i++){
+	    	ver.add(new Vertex(0,0));
+	    }
+	        
+	}
+	
+	void addEdge(int u, int v, int capacity)
+	{
+	    // flow is initialized with 0 for all edge
+	    edg.add(new Edge(0, capacity, u, v));
+	}
+	
+	void preflow(int s)
+	{
+	    // Making h of source Vertex equal to no. of vertices
+	    // Height of other vertices is 0.
+	    ver.get(s).h = ver.size();
+	 
+	    //
+	    for (int i = 0; i < edg.size(); i++)
+	    {
+	        // If current edge goes from source
+	        if (edg.get(i).u == s)
+	        {
+	            // Flow is equal to capacity
+	        	edg.get(i).flow = edg.get(i).capacity;
+	 
+	            // Initialize excess flow for adjacent v
+	            ver.get(edg.get(i).v).excessFlow += edg.get(i).flow;
+	 
+	            // Add an edge from v to s in residual graph with
+	            // capacity equal to 0
+	            edg.add(new Edge(-edg.get(i).flow, 0, edg.get(i).v, s));
+	        }
+	    }
+	}
+	
+	// returns index of overflowing Vertex
+	int overFlowVertex(ArrayList<Vertex> ver)
+	{
+	    for (int i = 1; i < ver.size() - 1; i++)
+	       if (ver.get(i).excessFlow > 0)
+	            return i;
+	 
+	    // -1 if no overflowing Vertex
+	    return -1;
+	}
+	
+	void updateReverseEdgeFlow(int i, int flow)
+	{
+	    int u = edg.get(i).v, v = edg.get(i).u;
+	 
+	    for (int j = 0; j < edg.size(); j++)
+	    {
+	        if (edg.get(j).v == v && edg.get(j).u == u)
+	        {
+	            edg.get(j).flow -= flow;
+	            return;
+	        }
+	    }
+	 
+	    // adding reverse Edge in residual graph
+	    edg.add(new Edge(0, flow, u, v));
+	}
+	
+	boolean push(int u)
+	{
+	    // Traverse through all edges to find an adjacent (of u)
+	    // to which flow can be pushed
+	    for (int i = 0; i < edg.size(); i++)
+	    {
+	        // Checks u of current edge is same as given
+	        // overflowing vertex
+	        if (edg.get(i).u == u)
+	        {
+	            // if flow is equal to capacity then no push
+	            // is possible
+	            if (edg.get(i).flow == edg.get(i).capacity)
+	                continue;
+	 
+	            // Push is only possible if height of adjacent
+	            // is smaller than height of overflowing vertex
+	            if (ver.get(u).h > ver.get(edg.get(i).v).h)
+	            {
+	                // Flow to be pushed is equal to minimum of
+	                // remaining flow on edge and excess flow.
+	                int flow = min(edg.get(i).capacity - edg.get(i).flow,
+	                               ver.get(u).excessFlow);
+	 
+	                // Reduce excess flow for overflowing vertex
+	                ver.get(u).excessFlow -= flow;
+	 
+	                // Increase excess flow for adjacent
+	                ver.get(edg.get(i).v).excessFlow += flow;
+	 
+	                // Add residual flow (With capacity 0 and negative
+	                // flow)
+	                edg.get(i).flow += flow;
+	 
+	                updateReverseEdgeFlow(i, flow);
+	 
+	                return true;
+	            }
+	        }
+	    }
+	    return false;
+	}
+	
+	void relabel(int u)
+	{
+	    // Initialize minimum height of an adjacent
+	    int mh = Integer.MAX_VALUE;
+	 
+	    // Find the adjacent with minimum height
+	    for (int i = 0; i < edg.size(); i++)
+	    {
+	        if (edg.get(i).u == u)
+	        {
+	            // if flow is equal to capacity then no
+	            // relabeling
+	            if (edg.get(i).flow == edg.get(i).capacity)
+	                continue;
+	 
+	            // Update minimum height
+	            if (ver.get(edg.get(i).v).h < mh)
+	            {
+	                mh = ver.get(edg.get(i).v).h;
+	 
+	                // updating height of u
+	                ver.get(u).h = mh + 1;
+	            }
+	        }
+	    }
+	}
+	
+	int getMaxFlow(int s, int t)
+	{
+	    preflow(s);
+	 
+	    // loop untill none of the Vertex is in overflow
+	    while (overFlowVertex(ver) != -1)
+	    {
+	        int u = overFlowVertex(ver);
+	        if (!push(u))
+	            relabel(u);
+	    }
+	 
+	    // ver.back() returns last Vertex, whose
+	    // e_flow will be final maximum flow
+	    return ver.get(ver.size()-1).excessFlow;
+	}
+	
+	int min(int a,int b){
+		if(a>=b){
+			return b;
+		}
+		else{
+			return a;
+		}
+	}
+	
+	public static void main(String args[])
+	{
+	    int V = 6;
+	    Graph g = new Graph(V);
+	 
+	    // Creating above shown flow network
+	    g.addEdge(0, 1, 16);
+	    g.addEdge(0, 2, 13);
+	    g.addEdge(1, 2, 10);
+	    g.addEdge(2, 1, 4);
+	    g.addEdge(1, 3, 12);
+	    g.addEdge(2, 4, 14);
+	    g.addEdge(3, 2, 9);
+	    g.addEdge(3, 5, 20);
+	    g.addEdge(4, 3, 7);
+	    g.addEdge(4, 5, 4);
+	 
+	    // Initialize source and sink
+	    int s = 0, t = 5;
+	 
+	    System.out.println( "Maximum flow is " + g.getMaxFlow(s, t));
+	}
+}
