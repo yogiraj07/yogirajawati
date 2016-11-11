@@ -19,6 +19,6 @@ def minCost(cost,m,n):
 
 #Driver program to test above functions
 cost = [[1, 2, 3],
-        [4, 8, 2],
         [1, 5, 3]]
+        [4, 8, 2],
 print(minCost(cost, 2, 2))
